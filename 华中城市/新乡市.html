@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: 'Shadows Into Light', cursive; /* 使用 Shadows Into Light 字体 */;
+        }
+    
+        h1 {
+            font-size: 40px;
+        }
+    
+        .titleimage {
+            width: 30px;
+            height: 30px;
+        }
+        /* 将天气预报标题和图片居中 */
+        h1,.titleimage {
+            display: inline-block;
+        }
+    
+        .table1 {
+        list-style: none;
+        display: flex;
+        justify-content: center; /* 将链接水平居中 */
+        }
+    
+        .table1 li {
+        margin-right: 10px; /* 设置相邻元素的右侧间距 */
+        display: inline-block;
+        }
+    
+        .click_effect {
+        display: inline-block;
+        text-decoration: none;
+        color: white; /* 设置超链接颜色 */
+        width: 200px;
+        height: 131px;
+        line-height: 131px;
+        }
+    
+        .click_effect:hover {
+        color: blue; /* 设置鼠标悬停时的颜色 */
+        }
+    
+        .one {
+        background-image: url(../image/华北风景图.png);
+        background-size: 100% 100%; /* 设置背景图片覆盖整个元素 */
+        background-repeat: no-repeat; /* 禁止背景图片重复 */
+        }
+    
+        .two {
+        background-image: url(../image/东北风景图.png);
+        background-size: 100% 100%; /* 设置背景图片覆盖整个元素 */
+        background-repeat: no-repeat; /* 禁止背景图片重复 */
+        }
+    
+        .three {
+        background-image: url(../image/华东风景图.png);
+        background-size: 100% 100%; /* 设置背景图片覆盖整个元素 */
+        background-repeat: no-repeat; /* 禁止背景图片重复 */
+        }
+    
+        .four {
+        background-image: url(../image/华中风景图.png);
+        background-size: 100% 100%; /* 设置背景图片覆盖整个元素 */
+        background-repeat: no-repeat; /* 禁止背景图片重复 */
+        }
+    
+        .five {
+        background-image: url(../image/华南风景图.png);
+        background-size: 100% 100%; /* 设置背景图片覆盖整个元素 */
+        background-repeat: no-repeat; /* 禁止背景图片重复 */
+        }
+    
+        .six {
+        background-image: url(../image/西北风景图.png);
+        background-size: 100% 100%; /* 设置背景图片覆盖整个元素 */
+        background-repeat: no-repeat; /* 禁止背景图片重复 */
+        }
+    
+        .seven {
+        background-image: url(../image/西南风景图.png);
+        background-size: 100% 100%; /* 设置背景图片覆盖整个元素 */
+        background-repeat: no-repeat; /* 禁止背景图片重复 */
+        }
+    
+        .eight {
+        background-image: url(../image/港澳台风景图.png);
+        background-size: 100% 100%; /* 设置背景图片覆盖整个元素 */
+        background-repeat: no-repeat; /* 禁止背景图片重复 */
+        }
+    
+        .table2 {
+        list-style: none;
+        display: flex;
+        justify-content: center; /* 将链接水平居中 */
+        }
+    
+        .table2 li {
+        margin-right: 10px; /* 设置相邻元素的右侧间距 */
+        display: inline-block;
+        }
+    
+        .click_effect_two {
+        display: inline-block;
+        text-decoration: none;
+        color: black; /* 设置超链接颜色 */
+        width: 100px;
+        height: 30px;
+        line-height: 30px;
+        }
+    
+        .click_effect_two:hover {
+        color: blue; /* 设置鼠标悬停时的颜色 */
+        }
+    
+       
+    </style>
+     <!-- 在 head 中引入 Google Fonts 的链接 -->
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap">
+</head>
+<body>
+    <div>
+        <h1>天气预报</h1>
+        <img class="titleimage" src="../image/天气预报标题图片.png" alt="#">
+    </div>
+
+    <h2>城市选择器</h2>
+
+    <div>
+    <ul class="table1">
+        <li><a class="click_effect one" href="../华北地区.html">华北</a></li>
+        <li><a class="click_effect two" href="../东北地区.html">东北</a></li>
+        <li><a class="click_effect three" href="../华东地区.html">华东</a></li>
+        <li><a class="click_effect four" href="../华中地区.html">华中</a></li>
+        <li><a class="click_effect five" href="../华南地区.html">华南</a></li>
+        <li><a class="click_effect six" href="../西北地区.html">西北</a></li>
+        <li><a class="click_effect seven" href="../西南地区.html">西南</a></li>
+        <li><a class="click_effect eight" href="../港澳台地区.html">港澳台</a></li>
+    </ul>
+    </div>
+
+    <h2>华中部分城市</h2>
+
+    <div>
+        <ul class="table2">
+            <li><a class="click_effect_two hzo" href="./武汉.html">武汉</a></li>
+            <li><a class="click_effect_two hzt" href="./郑州.html">郑州</a></li>
+            <li><a class="click_effect_two hzth" href="./长沙.html">长沙</a></li>
+            <li><a class="click_effect_two hzf" href="./三门峡.html">三门峡</a></li>
+            <li><a class="click_effect_two hzfi" href="./信阳市.html">信阳市</a></li>
+            <li><a class="click_effect_two hzs" href="./南阳市.html">南阳市</a></li>
+            <li><a class="click_effect_two hzse" href="./周口.html">周口</a></li>
+            <li><a class="click_effect_two hze" href="./商丘.html">商丘</a></li>
+        </ul>
+    </div>
+
+    <div>
+        <ul class="table2">
+            <li><a class="click_effect_two hzn" href="./安阳市.html">安阳市</a></li>
+            <li><a class="click_effect_two hzte" href="./平顶山.html">平顶山</a></li>
+            <li><a class="click_effect_two hzo_o" href="./开封市.html">开封市</a></li>
+            <li><a class="click_effect_two hzo_t" href="./新乡市.html">新乡市</a></li>
+            <li><a class="click_effect_two hzo_th" href="./洛阳市.html">洛阳市</a></li>
+            <li><a class="click_effect_two hzo_f" href="./济源.html">济源</a></li>
+            <li><a class="click_effect_two hzo_fi" href="./漯河市.html">漯河市</a></li>
+            <li><a class="click_effect_two hzo_s" href="./潢川.html">潢川</a></li>
+    </div>
+
+    <div>
+        <ul class="table2">
+            <li><a class="click_effect_two hzo_se" href="./濮阳.html">濮阳</a></li>
+            <li><a class="click_effect_two hzo_e" href="./焦作市.html">焦作市</a></li>
+            <li><a class="click_effect_two hzo_n" href="./许昌.html">许昌</a></li>
+            <li><a class="click_effect_two hzo_te" href="./驻马店市.html">驻马店市</a></li>
+            <li><a class="click_effect_two hzt_o" href="./鹤壁.html">鹤壁</a></li>
+            <li><a class="click_effect_two hzt_t" href="./仙桃.html">仙桃</a></li>
+            <li><a class="click_effect_two hzt_th" href="./十堰.html">十堰</a></li>
+            <li><a class="click_effect_two hzt_f" href="./咸宁.html">咸宁</a></li>
+        </ul>
+    </div>
+
+    <div>
+        <ul class="table2">
+            <li><a class="click_effect_two hzt_fi" href="./天门.html">天门</a></li>
+            <li><a class="click_effect_two hzt_s" href="./孝感.html">孝感</a></li>
+            <li><a class="click_effect_two hzt_se" href="./宜城.html">宜城</a></li>
+            <li><a class="click_effect_two hzt_e" href="./宜昌.html">宜昌</a></li>
+            <li><a class="click_effect_two hzt_n" href="./恩施.html">恩施</a></li>
+            <li><a class="click_effect_two hzt_te" href="./枣阳.html">枣阳</a></li>
+            <li><a class="click_effect_two hzth_o" href="./潜江.html">潜江</a></li>
+            <li><a class="click_effect_two hzth_t" href="./神农架.html">神农架</a></li>
+        </ul>
+    </div>
+
+    <div>
+        <ul class="table2">
+            <li><a class="click_effect_two hzth_th" href="./荆州.html">荆州</a></li>
+            <li><a class="click_effect_two hzth_f" href="./荆门.html">荆门</a></li>
+            <li><a class="click_effect_two hzth_fi" href="./襄阳.html">襄阳</a></li>
+            <li><a class="click_effect_two hzth_s" href="./鄂州.html">鄂州</a></li>
+            <li><a class="click_effect_two hzth_se" href="./随州.html">随州</a></li>
+            <li><a class="click_effect_two hzth_e" href="./麻城.html">麻城</a></li>
+            <li><a class="click_effect_two hzth_n" href="./黄冈.html">黄冈</a></li>
+            <li><a class="click_effect_two hzth_te" href="./黄石.html">黄石</a></li>
+        </ul>
+    </div>
+
+    <div>
+        <ul class="table2">
+            <li><a class="click_effect_two hzf_o" href="./临武.html">临武</a></li>
+            <li><a class="click_effect_two hzf_t" href="./南岳.html">南岳</a></li>
+            <li><a class="click_effect_two hzf_th" href="./吉首.html">吉首</a></li>
+            <li><a class="click_effect_two hzf_f" href="./娄底.html">娄底</a></li>
+            <li><a class="click_effect_two hzf_fi" href="./岳阳.html">岳阳</a></li>
+            <li><a class="click_effect_two hzf_s" href="./常德.html">常德</a></li> 
+            <li><a class="click_effect_two hzf_s" href="./张家界.html">张家界</a></li>
+            <li><a class="click_effect_two hzf_s" href="./怀化.html">怀化</a></li>
+        </ul>
+    </div>
+
+    <h2>新乡市天气</h2>
+    <!-- 用于显示天气信息的容器 -->
+    <div id="cityWeatherInfo" class="dbrongqi"></div>
+    
+    <!-- 引入 Axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <script>
+        function getCityWeather(city) {
+            const apiUrl = `http://www.localhost:8099/selectWeathers?area=华中&city=${encodeURIComponent(city)}`;
+            //const apiUrl = `http://www.localhost:8099/selectWeathers?area="华中"&city=${city}`;
+
+            axios.get(apiUrl)
+                .then(response => {
+                    // 处理成功的响应
+                    const weatherData = response.data;
+                    // console.log(weatherData)
+                    // tableData.value = weatherData
+                    const weatherInfoElement = document.getElementById('cityWeatherInfo');
+                    weatherInfoElement.innerHTML = ""; // 清空之前的内容
+
+                    // 创建表格元素
+                    const table = document.createElement('table');
+
+                    // 添加表头
+                    const thead = document.createElement('thead');
+                    const headerRow = document.createElement('tr');
+                    headerRow.innerHTML =
+                        '<th>week</th>' +
+                        '<th>date</th>' +
+                        '<th>dayWeather</th>' +
+                        '<th>dayWindDirection</th>' +
+                        '<th>dayWindPower</th>' +
+                        '<th>dayHigh</th>' +
+                        '<th>dayLow</th>' +
+                        '<th>nightWeather</th>' +
+                        '<th>nightWindDirection</th>' +
+                        '<th>nightWindPower</th>';
+                    thead.appendChild(headerRow);
+                    table.appendChild(thead);
+
+                    // 添加表格内容
+                    const tbody = document.createElement('tbody');
+                    weatherData.weather.forEach(day => {
+                        const row = document.createElement('tr');
+                        row.innerHTML = `<td>${day.week}</td>
+                                         <td>${day.date}</td>
+                                         <td>${day.dayWeather}</td>
+                                         <td>${day.dayWindDirection}</td>
+                                         <td>${day.dayWindPower}</td>
+                                         <td>${day.dayHigh}</td>
+                                         <td>${day.dayLow}</td>
+                                         <td>${day.nightWeather}</td>
+                                         <td>${day.nightWindDirection}</td>
+                                         <td>${day.nightWindPower}</td>`;
+                        tbody.appendChild(row);
+                    });
+                    table.appendChild(tbody);
+                    // 将表格添加到页面
+                    weatherInfoElement.appendChild(table);
+                })
+                .catch(error => {
+                    console.error('天气信息获取失败:', error);
+                });
+        }
+        document.addEventListener('DOMContentLoaded', function () {
+            const cityLinks = document.querySelectorAll('.click_effect_two');
+            // 在添加事件监听器之前检查 cityLinks 是否不为空
+            if (cityLinks.length > 0) {
+                cityLinks.forEach(link => {
+                    link.addEventListener('click', function (event) {
+                        event.preventDefault();
+                        const cityName = link.innerText;
+                        getCityWeather(cityName);
+                    });
+                });
+            }
+        });
+    </script>
+
+<div id="predictionInfo"></div>
+
+    <script>
+        // 添加一个新的函数用于获取天气预测准确率
+        function getPredictionAccuracy(city) {
+            const apiUrl = `http://www.localhost:8099/predict?area=华中&city=${encodeURIComponent(city)}`;
+
+            axios.get(apiUrl)
+                .then(response => {
+                    // 处理成功的响应
+                    const predictionData = response.data.p[0];
+
+                    // 获取用于展示的容器
+                    const predictionInfoElement = document.getElementById('predictionInfo');
+                    predictionInfoElement.innerHTML = ""; // 清空之前的内容
+
+                    // 创建元素来显示准确率
+                    const accuracyElement = document.createElement('p');
+                    accuracyElement.textContent = `天气预测准确率：${predictionData}`;
+
+                    // 将准确率元素添加到页面
+                    predictionInfoElement.appendChild(accuracyElement);
+                })
+                .catch(error => {
+                    console.error('准确率信息获取失败:', error);
+                });
+        }
+
+        // 在页面加载完成后执行
+        document.addEventListener('DOMContentLoaded', function () {
+            const cityLinks = document.querySelectorAll('.click_effect_two');
+
+            if (cityLinks.length > 0) {
+                cityLinks.forEach(link => {
+                    link.addEventListener('click', function (event) {
+                        event.preventDefault();
+                        const cityName = link.innerText;
+                        getPredictionAccuracy(cityName);
+                    });
+                });
+            }
+        });
+    </script>
+</body>
+</html>
