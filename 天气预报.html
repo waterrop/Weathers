@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>天气预报</title>
+    <!-- 引入 Axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <style>
+        body {
+            text-align: center;
+            font-family: 'Shadows Into Light', cursive; /* 使用 Shadows Into Light 字体 */;
+        }
+
+        h1 {
+            font-size: 40px;
+        }
+
+        .titleimage {
+            width: 30px;
+            height: 30px;
+        }
+        /* 将天气预报标题和图片居中 */
+        h1,.titleimage {
+            display: inline-block;
+        }
+
+        .table1 {
+        list-style: none;
+        display: flex;
+        justify-content: center; /* 将链接水平居中 */
+        }
+
+        .table1 li {
+        margin-right: 10px; /* 设置相邻元素的右侧间距 */
+        display: inline-block;
+        }
+
+        .click_effect {
+        display: inline-block;
+        text-decoration: none;
+        color: white; /* 设置超链接颜色 */
+        width: 200px;
+        height: 131px;
+        line-height: 131px;
+        }
+
+        .click_effect:hover {
+        color: blue; /* 设置鼠标悬停时的颜色 */
+        }
+
+        .one {
+        background-image: url(./image/华北风景图.png);
+        background-size: 100% 100%; /* 设置背景图片覆盖整个元素 */
+        background-repeat: no-repeat; /* 禁止背景图片重复 */
+        }
+
+        .two {
+        background-image: url(./image/东北风景图.png);
+        background-size: 100% 100%; /* 设置背景图片覆盖整个元素 */
+        background-repeat: no-repeat; /* 禁止背景图片重复 */
+        }
+
+        .three {
+        background-image: url(./image/华东风景图.png);
+        background-size: 100% 100%; /* 设置背景图片覆盖整个元素 */
+        background-repeat: no-repeat; /* 禁止背景图片重复 */
+        }
+
+        .four {
+        background-image: url(./image/华中风景图.png);
+        background-size: 100% 100%; /* 设置背景图片覆盖整个元素 */
+        background-repeat: no-repeat; /* 禁止背景图片重复 */
+        }
+
+        .five {
+        background-image: url(./image/华南风景图.png);
+        background-size: 100% 100%; /* 设置背景图片覆盖整个元素 */
+        background-repeat: no-repeat; /* 禁止背景图片重复 */
+        }
+
+        .six {
+        background-image: url(./image/西北风景图.png);
+        background-size: 100% 100%; /* 设置背景图片覆盖整个元素 */
+        background-repeat: no-repeat; /* 禁止背景图片重复 */
+        }
+
+        .seven {
+        background-image: url(./image/西南风景图.png);
+        background-size: 100% 100%; /* 设置背景图片覆盖整个元素 */
+        background-repeat: no-repeat; /* 禁止背景图片重复 */
+        }
+
+        .eight {
+        background-image: url(./image/港澳台风景图.png);
+        background-size: 100% 100%; /* 设置背景图片覆盖整个元素 */
+        background-repeat: no-repeat; /* 禁止背景图片重复 */
+        }
+
+    </style>
+     <!-- 在 head 中引入 Google Fonts 的链接 -->
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap">
+</head>
+<body>
+    <div>
+        <h1>天气预报</h1>
+        <img class="titleimage" src="./image/天气预报标题图片.png" alt="#">
+    </div>
+
+    <h2>城市选择器</h2>
+
+    <div>
+    <ul class="table1">
+        <li><a class="click_effect one" href="./华北地区.html" onclick="getWeather('华北')">华北</a></li>
+        <li><a class="click_effect two" href="./东北地区.html" onclick="getWeather('东北')">东北</a></li>
+        <li><a class="click_effect three" href="./华东地区.html" onclick="getWeather('华东')">华东</a></li>
+        <li><a class="click_effect four" href="./华中地区.html" onclick="getWeather('华中')">华中</a></li>
+        <li><a class="click_effect five" href="./华南地区.html" onclick="getWeather('华南')">华南</a></li>
+        <li><a class="click_effect six" href="./西北地区.html" onclick="getWeather('西北')">西北</a></li>
+        <li><a class="click_effect seven" href="./西南地区.html" onclick="getWeather('西南')">西南</a></li>
+        <li><a class="click_effect eight" href="./港澳台地区.html" onclick="getWeather('港澳台')">港澳台</a></li>
+    </ul>
+    </div>
+
+</body>
+</html>

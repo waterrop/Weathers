@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: 'Shadows Into Light', cursive; /* 使用 Shadows Into Light 字体 */;
+        }
+    
+        h1 {
+            font-size: 40px;
+        }
+    
+        .titleimage {
+            width: 30px;
+            height: 30px;
+        }
+        /* 将天气预报标题和图片居中 */
+        h1,.titleimage {
+            display: inline-block;
+        }
+    
+        .table1 {
+        list-style: none;
+        display: flex;
+        justify-content: center; /* 将链接水平居中 */
+        }
+    
+        .table1 li {
+        margin-right: 10px; /* 设置相邻元素的右侧间距 */
+        display: inline-block;
+        }
+    
+        .click_effect {
+        display: inline-block;
+        text-decoration: none;
+        color: white; /* 设置超链接颜色 */
+        width: 200px;
+        height: 131px;
+        line-height: 131px;
+        }
+    
+        .click_effect:hover {
+        color: blue; /* 设置鼠标悬停时的颜色 */
+        }
+    
+        .one {
+        background-image: url(./image/华北风景图.png);
+        background-size: 100% 100%; /* 设置背景图片覆盖整个元素 */
+        background-repeat: no-repeat; /* 禁止背景图片重复 */
+        }
+    
+        .two {
+        background-image: url(./image/东北风景图.png);
+        background-size: 100% 100%; /* 设置背景图片覆盖整个元素 */
+        background-repeat: no-repeat; /* 禁止背景图片重复 */
+        }
+    
+        .three {
+        background-image: url(./image/华东风景图.png);
+        background-size: 100% 100%; /* 设置背景图片覆盖整个元素 */
+        background-repeat: no-repeat; /* 禁止背景图片重复 */
+        }
+    
+        .four {
+        background-image: url(./image/华中风景图.png);
+        background-size: 100% 100%; /* 设置背景图片覆盖整个元素 */
+        background-repeat: no-repeat; /* 禁止背景图片重复 */
+        }
+    
+        .five {
+        background-image: url(./image/华南风景图.png);
+        background-size: 100% 100%; /* 设置背景图片覆盖整个元素 */
+        background-repeat: no-repeat; /* 禁止背景图片重复 */
+        }
+    
+        .six {
+        background-image: url(./image/西北风景图.png);
+        background-size: 100% 100%; /* 设置背景图片覆盖整个元素 */
+        background-repeat: no-repeat; /* 禁止背景图片重复 */
+        }
+    
+        .seven {
+        background-image: url(./image/西南风景图.png);
+        background-size: 100% 100%; /* 设置背景图片覆盖整个元素 */
+        background-repeat: no-repeat; /* 禁止背景图片重复 */
+        }
+    
+        .eight {
+        background-image: url(./image/港澳台风景图.png);
+        background-size: 100% 100%; /* 设置背景图片覆盖整个元素 */
+        background-repeat: no-repeat; /* 禁止背景图片重复 */
+        }
+    
+        .table2 {
+        list-style: none;
+        display: flex;
+        justify-content: center; /* 将链接水平居中 */
+        }
+    
+        .table2 li {
+        margin-right: 10px; /* 设置相邻元素的右侧间距 */
+        display: inline-block;
+        }
+    
+        .click_effect_two {
+        display: inline-block;
+        text-decoration: none;
+        color: black; /* 设置超链接颜色 */
+        width: 100px;
+        height: 30px;
+        line-height: 30px;
+        }
+    
+        .click_effect_two:hover {
+        color: blue; /* 设置鼠标悬停时的颜色 */
+        }
+    
+       
+    </style>
+     <!-- 在 head 中引入 Google Fonts 的链接 -->
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap">
+</head>
+<body>
+    <div>
+        <h1>天气预报</h1>
+        <img class="titleimage" src="./image/天气预报标题图片.png" alt="#">
+    </div>
+
+    <h2>城市选择器</h2>
+
+    <div>
+    <ul class="table1">
+        <li><a class="click_effect one" href="./华北地区.html">华北</a></li>
+        <li><a class="click_effect two" href="./东北地区.html">东北</a></li>
+        <li><a class="click_effect three" href="./华东地区.html">华东</a></li>
+        <li><a class="click_effect four" href="./华中地区.html">华中</a></li>
+        <li><a class="click_effect five" href="./华南地区.html">华南</a></li>
+        <li><a class="click_effect six" href="./西北地区.html">西北</a></li>
+        <li><a class="click_effect seven" href="./西南地区.html">西南</a></li>
+        <li><a class="click_effect eight" href="./港澳台地区.html">港澳台</a></li>
+    </ul>
+    </div>
+
+    <h2>华东部分城市</h2>
+
+    <div>
+        <ul class="table2">
+            <li><a class="click_effect_two hdo" href="./华东城市/上海.html">上海</a></li>
+            <li><a class="click_effect_two hdt" href="./华东城市/南京.html">南京</a></li>
+            <li><a class="click_effect_two hdth" href="./华东城市/南昌.html">南昌</a></li>
+            <li><a class="click_effect_two hdf" href="./华东城市/合肥.html">合肥</a></li>
+            <li><a class="click_effect_two hdfi" href="./华东城市/杭州.html">杭州</a></li>
+            <li><a class="click_effect_two hds" href="./华东城市/济南.html">济南</a></li>
+            <li><a class="click_effect_two hdse" href="./华东城市/福州.html">福州</a></li>
+            <li><a class="click_effect_two hde" href="./华东城市/东营.html">东营</a></li>
+        </ul>
+    </div>
+
+    <div>
+        <ul class="table2">
+            <li><a class="click_effect_two hdn" href="./华东城市/临沂.html">临沂</a></li>
+            <li><a class="click_effect_two hdte" href="./华东城市/威海.html">威海</a></li>
+            <li><a class="click_effect_two hdo_o" href="./华东城市/德州.html">德州</a></li>
+            <li><a class="click_effect_two hdo_t" href="./华东城市/日照.html">日照</a></li>
+            <li><a class="click_effect_two hdo_th" href="./华东城市/枣庄.html">枣庄</a></li>
+            <li><a class="click_effect_two hdo_f" href="./华东城市/泰安.html">泰安</a></li>
+            <li><a class="click_effect_two hdo_fi" href="./华东城市/济宁.html">济宁</a></li>
+            <li><a class="click_effect_two hdo_s" href="./华东城市/淄博.html">淄博</a></li>
+    </div>
+
+    <div>
+        <ul class="table2">
+            <li><a class="click_effect_two hdo_se" href="./华东城市/滨州.html">滨州</a></li>
+            <li><a class="click_effect_two hdo_e" href="./华东城市/潍坊.html">潍坊</a></li>
+            <li><a class="click_effect_two hdo_n" href="./华东城市/烟台.html">烟台</a></li>
+            <li><a class="click_effect_two hdo_te" href="./华东城市/聊城.html">聊城</a></li>
+            <li><a class="click_effect_two hdt_o" href="./华东城市/莱芜.html">莱芜</a></li>
+            <li><a class="click_effect_two hdt_t" href="./华东城市/菏泽.html">菏泽</a></li>
+            <li><a class="click_effect_two hdt_th" href="./华东城市/青岛.html">青岛</a></li>
+            <li><a class="click_effect_two hdt_f" href="./华东城市/毫州.html">毫州</a></li>
+        </ul>
+    </div>
+
+    <div>
+        <ul class="table2">
+            <li><a class="click_effect_two hdt_fi" href="./华东城市/六安.html">六安</a></li>
+            <li><a class="click_effect_two hdt_s" href="./华东城市/安庆.html">安庆</a></li>
+            <li><a class="click_effect_two hdt_se" href="./华东城市/宣城.html">宣城</a></li>
+            <li><a class="click_effect_two hdt_e" href="./华东城市/宿州.html">宿州</a></li>
+            <li><a class="click_effect_two hdt_n" href="./华东城市/巢湖.html">巢湖</a></li>
+            <li><a class="click_effect_two hdt_te" href="./华东城市/池州.html">池州</a></li>
+            <li><a class="click_effect_two hdth_o" href="./华东城市/淮北.html">淮北</a></li>
+            <li><a class="click_effect_two hdth_t" href="./华东城市/淮南.html">淮南</a></li>
+        </ul>
+    </div>
+
+    <div>
+        <ul class="table2">
+            <li><a class="click_effect_two hdth_th" href="./华东城市/滁州.html">滁州</a></li>
+            <li><a class="click_effect_two hdth_f" href="./华东城市/芜湖.html">芜湖</a></li>
+            <li><a class="click_effect_two hdth_fi" href="./华东城市/蚌埠.html">蚌埠</a></li>
+            <li><a class="click_effect_two hdth_s" href="./华东城市/铜陵.html">铜陵</a></li>
+            <li><a class="click_effect_two hdth_se" href="./华东城市/阜阳.html">阜阳</a></li>
+            <li><a class="click_effect_two hdth_e" href="./华东城市/马鞍山.html">马鞍山</a></li>
+            <li><a class="click_effect_two hdth_n" href="./华东城市/黄山市.html">黄山市</a></li>
+            <li><a class="click_effect_two hdth_te" href="./华东城市/东台.html">东台</a></li>
+        </ul>
+    </div>
+
+    <div>
+        <ul class="table2">
+            <li><a class="click_effect_two hdf_o" href="./华东城市/南通.html">南通</a></li>
+            <li><a class="click_effect_two hdf_t" href="./华东城市/宿迁.html">宿迁</a></li>
+            <li><a class="click_effect_two hdf_th" href="./华东城市/常州.html">常州</a></li>
+            <li><a class="click_effect_two hdf_f" href="./华东城市/徐州.html">徐州</a></li>
+            <li><a class="click_effect_two hdf_fi" href="./华东城市/扬州.html">扬州</a></li>
+            <li><a class="click_effect_two hdf_s" href="./华东城市/无锡.html">无锡</a></li> 
+            <li><a class="click_effect_two hdf_s" href="./华东城市/楚州.html">楚州</a></li>
+            <li><a class="click_effect_two hdf_s" href="./华东城市/泰州.html">泰州</a></li>
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: 'Shadows Into Light', cursive; /* 使用 Shadows Into Light 字体 */;
+        }
+    
+        h1 {
+            font-size: 40px;
+        }
+    
+        .titleimage {
+            width: 30px;
+            height: 30px;
+        }
+        /* 将天气预报标题和图片居中 */
+        h1,.titleimage {
+            display: inline-block;
+        }
+    
+        .table1 {
+        list-style: none;
+        display: flex;
+        justify-content: center; /* 将链接水平居中 */
+        }
+    
+        .table1 li {
+        margin-right: 10px; /* 设置相邻元素的右侧间距 */
+        display: inline-block;
+        }
+    
+        .click_effect {
+        display: inline-block;
+        text-decoration: none;
+        color: white; /* 设置超链接颜色 */
+        width: 200px;
+        height: 131px;
+        line-height: 131px;
+        }
+    
+        .click_effect:hover {
+        color: blue; /* 设置鼠标悬停时的颜色 */
+        }
+    
+        .one {
+        background-image: url(./image/华北风景图.png);
+        background-size: 100% 100%; /* 设置背景图片覆盖整个元素 */
+        background-repeat: no-repeat; /* 禁止背景图片重复 */
+        }
+    
+        .two {
+        background-image: url(./image/东北风景图.png);
+        background-size: 100% 100%; /* 设置背景图片覆盖整个元素 */
+        background-repeat: no-repeat; /* 禁止背景图片重复 */
+        }
+    
+        .three {
+        background-image: url(./image/华东风景图.png);
+        background-size: 100% 100%; /* 设置背景图片覆盖整个元素 */
+        background-repeat: no-repeat; /* 禁止背景图片重复 */
+        }
+    
+        .four {
+        background-image: url(./image/华中风景图.png);
+        background-size: 100% 100%; /* 设置背景图片覆盖整个元素 */
+        background-repeat: no-repeat; /* 禁止背景图片重复 */
+        }
+    
+        .five {
+        background-image: url(./image/华南风景图.png);
+        background-size: 100% 100%; /* 设置背景图片覆盖整个元素 */
+        background-repeat: no-repeat; /* 禁止背景图片重复 */
+        }
+    
+        .six {
+        background-image: url(./image/西北风景图.png);
+        background-size: 100% 100%; /* 设置背景图片覆盖整个元素 */
+        background-repeat: no-repeat; /* 禁止背景图片重复 */
+        }
+    
+        .seven {
+        background-image: url(./image/西南风景图.png);
+        background-size: 100% 100%; /* 设置背景图片覆盖整个元素 */
+        background-repeat: no-repeat; /* 禁止背景图片重复 */
+        }
+    
+        .eight {
+        background-image: url(./image/港澳台风景图.png);
+        background-size: 100% 100%; /* 设置背景图片覆盖整个元素 */
+        background-repeat: no-repeat; /* 禁止背景图片重复 */
+        }
+
+        .table2 {
+        list-style: none;
+        display: flex;
+        justify-content: center; /* 将链接水平居中 */
+        }
+    
+        .table2 li {
+        margin-right: 10px; /* 设置相邻元素的右侧间距 */
+        display: inline-block;
+        }
+
+        .click_effect_two {
+        display: inline-block;
+        text-decoration: none;
+        color: black; /* 设置超链接颜色 */
+        width: 100px;
+        height: 30px;
+        line-height: 30px;
+        }
+    
+        .click_effect_two:hover {
+        color: blue; /* 设置鼠标悬停时的颜色 */
+        }
+    
+       
+    </style>
+     <!-- 在 head 中引入 Google Fonts 的链接 -->
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap">
+</head>
+<body>
+    <div>
+        <h1>天气预报</h1>
+        <img class="titleimage" src="./image/天气预报标题图片.png" alt="#">
+    </div>
+
+    <h2>城市选择器</h2>
+
+    <div>
+    <ul class="table1">
+        <li><a class="click_effect one" href="./华北地区.html">华北</a></li>
+        <li><a class="click_effect two" href="./东北地区.html">东北</a></li>
+        <li><a class="click_effect three" href="./华东地区.html">华东</a></li>
+        <li><a class="click_effect four" href="./华中地区.html">华中</a></li>
+        <li><a class="click_effect five" href="./华南地区.html">华南</a></li>
+        <li><a class="click_effect six" href="./西北地区.html">西北</a></li>
+        <li><a class="click_effect seven" href="./西南地区.html">西南</a></li>
+        <li><a class="click_effect eight" href="./港澳台地区.html">港澳台</a></li>
+    </ul>
+    </div>
+
+    <h2>东北部分城市</h2>
+
+    <div class="table2_container">
+        <div>
+            <ul class="table2">
+                <li><a class="click_effect_two dbo" href="./东北城市/哈尔滨.html">哈尔滨</a></li>
+                <li><a class="click_effect_two dbt" href="./东北城市/沈阳.html">沈阳</a></li>
+                <li><a class="click_effect_two dbth" href="./东北城市/长春.html">长春</a></li>
+                <li><a class="click_effect_two dbf" href="./东北城市/吉林.html">吉林</a></li>
+                <li><a class="click_effect_two dbfi" href="./东北城市/四平.html">四平</a></li>
+                <li><a class="click_effect_two dbs" href="./东北城市/延吉.html">延吉</a></li>
+                <li><a class="click_effect_two dbse" href="./东北城市/松原.html">松原</a></li>
+                <li><a class="click_effect_two dbe" href="./东北城市/桦甸.html">桦甸</a></li>
+            </ul>
+        </div>
+    
+        <div>
+            <ul class="table2">
+                <li><a class="click_effect_two dbn" href="./东北城市/梅河口.html">梅河口</a></li>
+                <li><a class="click_effect_two dbte" href="./东北城市/珲春.html">珲春</a></li>
+                <li><a class="click_effect_two dbo_o" href="./东北城市/白城.html">白城</a></li>
+                <li><a class="click_effect_two dbo_t" href="./东北城市/白山.html">白山</a></li>
+                <li><a class="click_effect_two dbo_th" href="./东北城市/辽源.html">辽源</a></li>
+                <li><a class="click_effect_two dbo_f" href="./东北城市/通化.html">通化</a></li>
+                <li><a class="click_effect_two dbo_fi" href="./东北城市/集安.html">集安</a></li>
+                <li><a class="click_effect_two dbo_s" href="./东北城市/七台河.html">七台河</a></li>
+        </div>
+    
+        <div>
+            <ul class="table2">
+                <li><a class="click_effect_two dbo_se" href="./东北城市/伊春.html">伊春</a></li>
+                <li><a class="click_effect_two dbo_e" href="./东北城市/佳木斯.html">佳木斯</a></li>
+                <li><a class="click_effect_two dbo_n" href="./东北城市/加格达奇.html">加格达奇</a></li>
+                <li><a class="click_effect_two dbo_te" href="./东北城市/勃利.html">勃利</a></li>
+                <li><a class="click_effect_two dbt_o" href="./东北城市/双鸭山.html">双鸭山</a></li>
+                <li><a class="click_effect_two dbt_t" href="./东北城市/大庆.html">大庆</a></li>
+                <li><a class="click_effect_two dbt_th" href="./东北城市/杜蒙.html">杜蒙</a></li>
+                <li><a class="click_effect_two dbt_f" href="./东北城市/漠河.html">漠河</a></li>
+            </ul>
+        </div>
+    
+        <div>
+            <ul class="table2">
+                <li><a class="click_effect_two dbt_fi" href="./东北城市/牡丹江.html">牡丹江</a></li>
+                <li><a class="click_effect_two dbt_s" href="./东北城市/甘南.html">甘南</a></li>
+                <li><a class="click_effect_two dbt_se" href="./东北城市/绥化.html">绥化</a></li>
+                <li><a class="click_effect_two dbt_e" href="./东北城市/绥芬河.html">绥芬河</a></li>
+                <li><a class="click_effect_two dbt_n" href="./东北城市/鸡西.html">鸡西</a></li>
+                <li><a class="click_effect_two dbt_te" href="./东北城市/鹤岗.html">鹤岗</a></li>
+                <li><a class="click_effect_two dbth_o" href="./东北城市/黑河.html">黑河</a></li>
+                <li><a class="click_effect_two dbth_t" href="./东北城市/齐齐哈尔.html">齐齐哈尔</a></li>
+            </ul>
+        </div>
+    
+        <div>
+            <ul class="table2">
+                <li><a class="click_effect_two dbth_th" href="./东北城市/丹东.html">丹东</a></li>
+                <li><a class="click_effect_two dbth_f" href="./东北城市/大连.html">大连</a></li>
+                <li><a class="click_effect_two dbth_fi" href="./东北城市/新宾.html">新宾</a></li>
+                <li><a class="click_effect_two dbth_s" href="./东北城市/朝阳.html">朝阳</a></li>
+                <li><a class="click_effect_two dbth_se" href="./东北城市/本溪.html">本溪</a></li>
+                <li><a class="click_effect_two dbth_e" href="./东北城市/瓦房店.html">瓦房店</a></li>
+                <li><a class="click_effect_two dbth_n" href="./东北城市/营口.html">营口</a></li>
+                <li><a class="click_effect_two dbth_te" href="./东北城市/葫芦岛.html">葫芦岛</a></li>
+            </ul>
+        </div>
+    
+        <div>
+            <ul class="table2">
+                <li><a class="click_effect_two dbf_o" href="./东北城市/辽阳.html">辽阳</a></li>
+                <li><a class="click_effect_two dbf_t" href="./东北城市/铁岭.html">铁岭</a></li>
+                <li><a class="click_effect_two dbf_th" href="./东北城市/锦州.html">锦州</a></li>
+                <li><a class="click_effect_two dbf_f" href="./东北城市/阜新.html">阜新</a></li>
+                <li><a class="click_effect_two dbf_fi" href="./东北城市/鞍山.html">鞍山</a></li>
+                <li><a class="click_effect_two dbf_s" href="./东北城市/盘山.html">盘山</a></li> 
+            </ul>
+        </div>
+        </div>
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: 'Shadows Into Light', cursive; /* 使用 Shadows Into Light 字体 */;
+        }
+    
+        h1 {
+            font-size: 40px;
+        }
+    
+        .titleimage {
+            width: 30px;
+            height: 30px;
+        }
+        /* 将天气预报标题和图片居中 */
+        h1,.titleimage {
+            display: inline-block;
+        }
+    
+        .table1 {
+        list-style: none;
+        display: flex;
+        justify-content: center; /* 将链接水平居中 */
+        }
+    
+        .table1 li {
+        margin-right: 10px; /* 设置相邻元素的右侧间距 */
+        display: inline-block;
+        }
+    
+        .click_effect {
+        display: inline-block;
+        text-decoration: none;
+        color: white; /* 设置超链接颜色 */
+        width: 200px;
+        height: 131px;
+        line-height: 131px;
+        }
+    
+        .click_effect:hover {
+        color: blue; /* 设置鼠标悬停时的颜色 */
+        }
+    
+        .one {
+        background-image: url(./image/华北风景图.png);
+        background-size: 100% 100%; /* 设置背景图片覆盖整个元素 */
+        background-repeat: no-repeat; /* 禁止背景图片重复 */
+        }
+    
+        .two {
+        background-image: url(./image/东北风景图.png);
+        background-size: 100% 100%; /* 设置背景图片覆盖整个元素 */
+        background-repeat: no-repeat; /* 禁止背景图片重复 */
+        }
+    
+        .three {
+        background-image: url(./image/华东风景图.png);
+        background-size: 100% 100%; /* 设置背景图片覆盖整个元素 */
+        background-repeat: no-repeat; /* 禁止背景图片重复 */
+        }
+    
+        .four {
+        background-image: url(./image/华中风景图.png);
+        background-size: 100% 100%; /* 设置背景图片覆盖整个元素 */
+        background-repeat: no-repeat; /* 禁止背景图片重复 */
+        }
+    
+        .five {
+        background-image: url(./image/华南风景图.png);
+        background-size: 100% 100%; /* 设置背景图片覆盖整个元素 */
+        background-repeat: no-repeat; /* 禁止背景图片重复 */
+        }
+    
+        .six {
+        background-image: url(./image/西北风景图.png);
+        background-size: 100% 100%; /* 设置背景图片覆盖整个元素 */
+        background-repeat: no-repeat; /* 禁止背景图片重复 */
+        }
+    
+        .seven {
+        background-image: url(./image/西南风景图.png);
+        background-size: 100% 100%; /* 设置背景图片覆盖整个元素 */
+        background-repeat: no-repeat; /* 禁止背景图片重复 */
+        }
+    
+        .eight {
+        background-image: url(./image/港澳台风景图.png);
+        background-size: 100% 100%; /* 设置背景图片覆盖整个元素 */
+        background-repeat: no-repeat; /* 禁止背景图片重复 */
+        }
+    
+        .table2 {
+        list-style: none;
+        display: flex;
+        justify-content: center; /* 将链接水平居中 */
+        }
+    
+        .table2 li {
+        margin-right: 10px; /* 设置相邻元素的右侧间距 */
+        display: inline-block;
+        }
+    
+        .click_effect_two {
+        display: inline-block;
+        text-decoration: none;
+        color: black; /* 设置超链接颜色 */
+        width: 100px;
+        height: 30px;
+        line-height: 30px;
+        }
+    
+        .click_effect_two:hover {
+        color: blue; /* 设置鼠标悬停时的颜色 */
+        }
+    
+       
+    </style>
+     <!-- 在 head 中引入 Google Fonts 的链接 -->
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap">
+</head>
+<body>
+    <div>
+        <h1>天气预报</h1>
+        <img class="titleimage" src="./image/天气预报标题图片.png" alt="#">
+    </div>
+
+    <h2>城市选择器</h2>
+
+    <div>
+    <ul class="table1">
+        <li><a class="click_effect one" href="./华北地区.html">华北</a></li>
+        <li><a class="click_effect two" href="./东北地区.html">东北</a></li>
+        <li><a class="click_effect three" href="./华东地区.html">华东</a></li>
+        <li><a class="click_effect four" href="./华中地区.html">华中</a></li>
+        <li><a class="click_effect five" href="./华南地区.html">华南</a></li>
+        <li><a class="click_effect six" href="./西北地区.html">西北</a></li>
+        <li><a class="click_effect seven" href="./西南地区.html">西南</a></li>
+        <li><a class="click_effect eight" href="./港澳台地区.html">港澳台</a></li>
+    </ul>
+    </div>
+
+    <h2>港澳台部分城市</h2>
+
+    <div>
+        <ul class="table2">
+            <li><a class="click_effect_two gato" href="./港澳台城市/香港.html">香港</a></li>
+            <li><a class="click_effect_two gatt" href="./港澳台城市/澳门.html">澳门</a></li>
+            <li><a class="click_effect_two gatth" href="./港澳台城市/台北.html">台北</a></li>
+            <li><a class="click_effect_two gatf" href="./港澳台城市/台东.html">台东</a></li>
+            <li><a class="click_effect_two gatfi" href="./港澳台城市/台中.html">台中</a></li>
+            <li><a class="click_effect_two gats" href="./港澳台城市/台南.html">台南</a></li>
+            <li><a class="click_effect_two gatse" href=".港澳台城市//嘉义.html">嘉义</a></li>
+            <li><a class="click_effect_two gate" href="./港澳台城市/基隆.html">基隆</a></li>
+        </ul>
+    </div>
+
+    <div>
+        <ul class="table2">
+            <li><a class="click_effect_two gatn" href="./港澳台城市/宜兰.html">宜兰</a></li>
+            <li><a class="click_effect_two gatte" href="./港澳台城市/新竹.html">新竹</a></li>
+            <li><a class="click_effect_two gato_o" href="./港澳台城市/桃园.html">桃园</a></li>
+            <li><a class="click_effect_two gato_t" href="./港澳台城市/花莲.html">花莲</a></li>
+            <li><a class="click_effect_two gato_th" href="./港澳台城市/高雄.html">高雄</a></li>
+    </div>
+</body>
+</html>
